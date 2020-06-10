@@ -1,0 +1,21 @@
+{% extends 'shop/basic.html' %}
+
+{% block title%} AD Mart {% endblock %}
+{% block body %}
+
+<div class="container">
+	<div class="col-my-4">
+		<h2>PAyment Status regarding your Order ID {{response.ORDERID}}</h2>
+		{% if response.RESPCODE == '01' %}
+		ORDER SUCCESS
+		{% else %}
+		ORDER FAILURE
+		{% endif %}
+
+
+
+	</div>
+</div>
+
+
+{% endblock %}
